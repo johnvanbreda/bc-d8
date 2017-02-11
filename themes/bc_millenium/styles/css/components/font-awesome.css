@@ -176,8 +176,7 @@
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 .fa-stack {
@@ -2861,4 +2860,3 @@
   overflow: visible;
   clip: auto;
 }
-/*# sourceMappingURL=maps/font-awesome.css.map */

@@ -593,15 +593,6 @@ textarea.placeholder_text {
   color: black !important;
   border-color: silver !important;
 }
-.ui-dialog .form-text::-webkit-input-placeholder {
-  color: silver;
-}
-.ui-dialog .form-text::-moz-placeholder {
-  color: silver;
-}
-.ui-dialog .form-text:-ms-input-placeholder {
-  color: silver;
-}
 .ui-dialog .form-text::placeholder {
   color: silver;
 }
@@ -1079,4 +1070,3 @@ input.cke_dialog_ui_input_password {
   color: #363636 !important;
   border-color: #eeeeee !important;
 }
-/*# sourceMappingURL=maps/color.css.map */

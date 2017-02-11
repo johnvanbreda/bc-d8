@@ -24,6 +24,11 @@
   margin: 0;
 }
 
+.pr-header {
+  background: url(../../../images/banner.jpg);
+  text-align: center;
+}
+
 .pr-navbar .block {
   margin: 0;
 }
@@ -51,4 +56,3 @@
 .l-r:after {
   clear: both;
 }
-/*# sourceMappingURL=maps/page.css.map */

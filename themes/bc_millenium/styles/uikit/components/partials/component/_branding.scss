@@ -3,7 +3,11 @@
  *  - Drupal core branding block.
  ============================================================================ */
 
-.block--system-branding-block {}
+@import "compass/css3";
+
+.block-system-branding-block {
+  margin-bottom: 0;
+}
 
 
 .site-branding {
@@ -20,6 +24,7 @@
   &__logo-link {
     display: inline-block;
     @include output-rhythm(padding, $xxx-small 0);
+    margin-top: 1.625em;
   }
 
   // logo image
@@ -38,6 +43,8 @@
 
   // site name link
   &__name-link {
+    font-size: 40px;
+    @include text-shadow(rgba(blue, 0.2) 1px 1px 0, rgba(gray, 0.2) 2px 2px 0, rgba(gray, 0.2) 3px 3px 0);
     &:hover,
     &:focus {
       text-decoration: none;

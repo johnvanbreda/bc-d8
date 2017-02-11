@@ -17,8 +17,7 @@
   opacity: .001;
   display: none;
   left: 0;
-  -webkit-transform: translate3d(-15em, 0, 0);
-          transform: translate3d(-15em, 0, 0);
+  transform: translate3d(-15em, 0, 0);
   transition: all, 225ms, ease-in-out;
 }
 .ms-offcanvas .rm-block__content a {
@@ -45,8 +44,7 @@
 }
 .ms-offcanvas.rm-is-open > .page {
   position: relative;
-  -webkit-transform: translate3d(15em, 0, 0);
-          transform: translate3d(15em, 0, 0);
+  transform: translate3d(15em, 0, 0);
 }
 .ms-offcanvas.rm-is-open .l-pr {
   margin: 0;
@@ -59,4 +57,3 @@
   position: absolute;
   top: 0;
 }
-/*# sourceMappingURL=maps/responsive-menus--offcanvas.css.map */

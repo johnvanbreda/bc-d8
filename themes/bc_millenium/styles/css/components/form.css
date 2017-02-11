@@ -89,9 +89,7 @@ input[type="checkbox"], input[type="radio"] {
   margin-left: 0.1875rem;
   width: auto;
   height: auto;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 textarea,
@@ -200,10 +198,7 @@ textarea[disabled],
 a.button_disabled {
   box-shadow: none;
   opacity: 0.7;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   cursor: default;
 }
 
@@ -236,9 +231,7 @@ input:focus:-ms-input-placeholder {
  *  - common styles for form elements and classes.
  ============================================================================ */
 .form-text {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .form-text[name="subject[0][value]"] {
   width: 50%;
@@ -804,18 +797,8 @@ label button.link {
   padding: 0 1px;
   height: 16px;
   border-radius: 10em;
-  -webkit-animation: animate-stripes 3s linear infinite;
-          animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
   transition: width 0.5s ease-out;
-}
-
-@-webkit-keyframes animate-stripes {
-  0% {
-    background-position: 0 0, 0 0;
-  }
-  100% {
-    background-position: 0 0, -80px 0;
-  }
 }
 
 @keyframes animate-stripes {
@@ -924,4 +907,3 @@ tr .form-item {
   font-style: normal;
   font-weight: 700;
 }
-/*# sourceMappingURL=maps/form.css.map */

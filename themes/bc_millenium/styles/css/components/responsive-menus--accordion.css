@@ -32,9 +32,7 @@
   outline: 0;
 }
 .ms-accordion .is-open--parent .rm-accordion-trigger__icon {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   transition: all, 225ms, ease-in-out;
 }
 .ms-accordion .rm-accordion-trigger__icon {
@@ -55,4 +53,3 @@
   margin-left: 40px;
   margin-left: 2.5rem;
 }
-/*# sourceMappingURL=maps/responsive-menus--accordion.css.map */

@@ -480,9 +480,7 @@ ul.inline li ol {
   transition: opacity 0.15s ease-in;
   z-index: 50;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   display: block;
   text-align: center;
   padding: 6px 16px;
@@ -491,9 +489,7 @@ ul.inline li ol {
 @media all and (max-width: 45em) {
   .skip-link {
     left: 10%;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
+    transform: none;
   }
 }
 .skip-link:visited, .skip-link:active, .skip-link:focus {
@@ -605,9 +601,7 @@ ul.inline li ol {
  * - classes and styles set by CK Editor.
  ============================================================================ */
 .text-align-justify {
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
 }
 
 /**
@@ -638,12 +632,9 @@ ul.inline li ol {
  ============================================================================ */
 .is-vertical-center {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-filter: blur(0.1px);
-          filter: blur(0.1px);
+  top: 80%;
+  transform: translateY(-50%);
+  filter: blur(0.1px);
 }
 
 .is-vertical-top {
@@ -674,4 +665,3 @@ ul.inline li ol {
   left: auto;
   right: 0;
 }
-/*# sourceMappingURL=maps/base.css.map */

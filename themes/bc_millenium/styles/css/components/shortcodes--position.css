@@ -11,9 +11,7 @@
 .vertical-center {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 @media all and (max-width: 60em) {
@@ -119,4 +117,3 @@
 .z-index-10 {
   z-index: 10;
 }
-/*# sourceMappingURL=maps/shortcodes--position.css.map */
