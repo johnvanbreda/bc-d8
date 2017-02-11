@@ -23,12 +23,9 @@ rows:
       role: banner
       id: masthead
     regions:
-      header_first:
-        label: 'Header first'
+      header:
+        label: 'Header'
         order: 1
-      header_second:
-        label: 'Header second'
-        order: 2
   navbar:
     attributes:
       id: navbar

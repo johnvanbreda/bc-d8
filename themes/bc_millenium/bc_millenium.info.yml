@@ -9,8 +9,7 @@ description: 'Butterflies for the New Millennium Drupal 8 thene.<br />Base theme
 tags: sub-theme
 regions:
   leaderboard: Leaderboard
-  header_first: 'Header first'
-  header_second: 'Header second'
+  header: 'Header'
   navbar: Navbar
   highlighted: Highlighted
   features_first: 'Features first'

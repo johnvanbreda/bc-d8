@@ -7,7 +7,7 @@ dependencies:
     - bc_millenium
 id: bc_millenium_branding
 theme: bc_millenium
-region: header_first
+region: header
 weight: 0
 provider: null
 plugin: system_branding_block
