@@ -2,6 +2,8 @@
  * Views
  ============================================================================ */
 
+@import "compass/css3";
+
 // View wrapper.
 .views-element-container {}
 
@@ -79,6 +81,24 @@
           display: inline-block;
         }
       }
+    }
+  }
+}
+
+.view-quick-links {
+  li {
+    border: 1px solid #bababa;
+    @include border-radius(3px);
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+    margin: 0 5%;
+    max-width: 23%;
+    padding: 7px;
+    @include inline-block;
+    .views-field-title a {
+      font-family: "Museo300", arial, Helvetica, "Sans-Serif";
+      font-size: 21px;
+      padding: 10px 0 4px 0;
+      display: block;
     }
   }
 }

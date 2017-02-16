@@ -29,6 +29,10 @@
   text-align: center;
 }
 
+.pr-navbar {
+  padding: 8px 0;
+  font: 15px "Museo300", Arial, Helvetica, sans-serif;
+}
 .pr-navbar .block {
   margin: 0;
 }
@@ -39,6 +43,22 @@
   .pr-navbar__rw {
     padding: 0;
   }
+}
+.pr-navbar .menu__item {
+  background: none;
+}
+.pr-navbar .menu__item * {
+  background: none;
+}
+
+.pr-highlighted {
+  margin-top: -11px;
+  min-height: 11px;
+  background: url(../../../images/banner_grass.png) top;
+  padding-top: 1px;
+}
+.pr-highlighted > .regions {
+  margin-top: 11px;
 }
 
 .l-rw {

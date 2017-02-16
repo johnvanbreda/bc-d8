@@ -61,3 +61,25 @@
 .fa-loaded .view-empty:not(:empty) .links a[href="/node/add"]:before {
   display: inline-block;
 }
+
+.view-quick-links li {
+  border: 1px solid #bababa;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+  margin: 0 5%;
+  max-width: 23%;
+  padding: 7px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+.view-quick-links li .views-field-title a {
+  font-family: "Museo300", arial, Helvetica, "Sans-Serif";
+  font-size: 21px;
+  padding: 10px 0 4px 0;
+  display: block;
+}

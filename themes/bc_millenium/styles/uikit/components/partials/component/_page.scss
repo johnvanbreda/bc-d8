@@ -63,6 +63,9 @@
 // Navbar
 .pr-navbar {
 
+  padding: 8px 0;
+  font: 15px "Museo300", Arial, Helvetica, sans-serif;
+
   .block {
     margin: 0;
 
@@ -79,13 +82,27 @@
   }
 
   &__navbar {}
+
+  .menu__item {
+    background: none;
+    * {
+      background: none;
+    }
+  }
 }
 
 
 // Highlighted
 .pr-highlighted {
+  margin-top: -11px;
+  min-height: 11px;
+  background: url(../../../images/banner_grass.png) top;
+  padding-top: 1px;
   &__rw {}
   &__highlighted {}
+  > .regions {
+    margin-top: 11px;
+  }
 }
 
 
