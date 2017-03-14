@@ -324,9 +324,76 @@ pre {
   display: none;
 }
 
+/* Fixes an issue where the map viewport has zero size so layers don't show */
 #map .olMapViewport > div:first-child {
   width: 100%;
   height: 100%;
+}
+
+/* Record details */
+.record-details-fields .field {
+  margin: 0;
+  line-height: 1.4em;
+}
+.record-details-fields .field span:first-child {
+  width: 30%;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.detail-panel #comment-text {
+  width: 100%;
+}
+
+.layer_list {
+  position: relative;
+  z-index: 1000;
+}
+.layer_list ul {
+  margin-bottom: -30px;
+  text-align: right;
+}
+.layer_list li {
+  font-size: 10px;
+  padding: 2px 4px;
+  margin: 0 4px;
+  color: #ffffff;
+  background: #134506;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+.layer_list li input {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.layer_list li img {
+  display: none;
+}
+
+/* Filter panels */
+#filter-details .button {
+  height: auto;
+  border: none;
+}
+#filter-details #filter-panes div.pane {
+  min-height: 100px;
+  margin-right: 0.5%;
+}
+#filter-details #filter-panes div.pane:nth-child(1), #filter-details #filter-panes div.pane:nth-child(2) {
+  width: 49.75%;
+}
+#filter-details #filter-panes div.pane:nth-child(3), #filter-details #filter-panes div.pane:nth-child(4), #filter-details #filter-panes div.pane:nth-child(5) {
+  width: 33%;
+}
+#filter-details #filter-panes div.pane:nth-child(2), #filter-details #filter-panes div.pane:nth-child(5) {
+  margin-right: 0;
 }
 
 /**

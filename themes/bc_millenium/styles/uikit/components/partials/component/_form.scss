@@ -3,6 +3,8 @@
  *  - common styles for form elements and classes.
  ============================================================================ */
 
+@import "compass/css3";
+
 .form-text {
   appearance: none;
 
@@ -406,5 +408,47 @@ details {
   }
 }
 
+/* Indicia form changes */
+#entry_form {
+  label {
+    display: block;
+    margin-bottom: 0;
+  }
+  input[type=text], select, textarea {
+    width: 80%;
+    &.error {
+      border-color: red;
+    }
+  }
+  .helpText {
+    margin-left: 0;
+  }
+  #map-footer {
+    font-size: 10px;
+    line-height: 1.4em;
+    h3 {
+      line-height: 1.4em;
+    }
+  }
+  label.error {
+    margin: 0 0 8px 0;
+  }
+  @media #{$tablet-isolate} {
+    .l-r {
+      display: block;
+      float: none;
+      width: auto;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.indicia-button {
+  padding: 4px 10px;
+  color: #ffffff;
+  background: #134506;
+  @include border-radius(8px);
+  border: none;
+}
 
 

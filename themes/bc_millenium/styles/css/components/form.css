@@ -530,6 +530,49 @@ details > .details-wrapper {
   min-width: unset;
 }
 
+/* Indicia form changes */
+#entry_form label {
+  display: block;
+  margin-bottom: 0;
+}
+#entry_form input[type=text], #entry_form select, #entry_form textarea {
+  width: 80%;
+}
+#entry_form input[type=text].error, #entry_form select.error, #entry_form textarea.error {
+  border-color: red;
+}
+#entry_form .helpText {
+  margin-left: 0;
+}
+#entry_form #map-footer {
+  font-size: 10px;
+  line-height: 1.4em;
+}
+#entry_form #map-footer h3 {
+  line-height: 1.4em;
+}
+#entry_form label.error {
+  margin: 0 0 8px 0;
+}
+@media all and (min-width: 45.063em) and (max-width: 60em) {
+  #entry_form .l-r {
+    display: block;
+    float: none;
+    width: auto;
+    margin-bottom: 1em;
+  }
+}
+
+.indicia-button {
+  padding: 4px 10px;
+  color: #ffffff;
+  background: #134506;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
 /**
  * Buttons
  * We include button styling separate (from _forms.scss, Form Base/Theme in base.css)

@@ -68,7 +68,7 @@
   -webkit-border-radius: 3px;
   border-radius: 3px;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
-  margin: 0 5%;
+  margin: 2% 5%;
   max-width: 23%;
   padding: 7px;
   display: inline-block;
@@ -82,4 +82,15 @@
   font-size: 21px;
   padding: 10px 0 4px 0;
   display: block;
+}
+
+@media all and (min-width: 45.063em) and (max-width: 60em) {
+  .view-quick-links li {
+    max-width: 39%;
+  }
+}
+@media all and (max-width: 45em) {
+  .view-quick-links li {
+    max-width: 90%;
+  }
 }

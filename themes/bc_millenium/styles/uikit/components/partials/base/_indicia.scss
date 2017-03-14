@@ -1,6 +1,75 @@
+@import "compass/css3";
+
+/* Fixes an issue where the map viewport has zero size so layers don't show */
 #map {
   .olMapViewport > div:first-child {
     width: 100%;
     height: 100%;
+  }
+}
+/* Record details */
+.record-details-fields {
+  .field {
+    margin: 0;
+    line-height: 1.4em;
+    span:first-child {
+      width: 30%;
+      display: inline-block;
+      font-weight: bold;
+    }
+  }
+}
+.detail-panel {
+  #comment-text {
+    width: 100%;
+  }
+}
+.layer_list {
+  position: relative;
+  z-index: 1000;
+  ul {
+    margin-bottom: -30px;
+    text-align: right;
+  }
+  li {
+    font-size: 10px;
+    padding: 2px 4px;
+    margin: 0 4px;
+    color: #ffffff;
+    background: #134506;
+    @include border-radius(8px);
+    border: none;
+    @include inline-block;
+
+    input {
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+
+    img {
+      display: none;
+    }
+  }
+}
+/* Filter panels */
+#filter-details {
+  .button {
+    height: auto;
+    border: none;
+  }
+  #filter-panes {
+    div.pane {
+      min-height: 100px;
+      margin-right: 0.5%;
+    }
+    div.pane:nth-child(1), div.pane:nth-child(2) {
+      width: 49.75%;
+    }
+    div.pane:nth-child(3), div.pane:nth-child(4), div.pane:nth-child(5) {
+      width: 33%;
+    }
+    div.pane:nth-child(2), div.pane:nth-child(5) {
+      margin-right: 0;
+    }
   }
 }
