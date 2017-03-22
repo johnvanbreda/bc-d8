@@ -1,0 +1,5 @@
+name: Butterflies for the New Millenium extras
+description: Blocks and other features for Butterflies for the New Millenium
+core: 8.x
+version: "8.x-1.0"
+type: module
