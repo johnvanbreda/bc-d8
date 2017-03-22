@@ -330,6 +330,46 @@ pre {
   height: 100%;
 }
 
+/* Home page */
+#recent-records-container {
+  height: 350px;
+  overflow-y: auto;
+}
+#recent-records-container .recent-records-row {
+  margin: 8px 0;
+}
+#recent-records-container .recent-records-details {
+  float: left;
+  width: 60%;
+}
+#recent-records-container .recent-records-details .latin {
+  font-style: italic;
+}
+#recent-records-container .recent-records-details .extra {
+  font-size: 80%;
+}
+#recent-records-container .recent-records-details .record-title {
+  font-weight: bold;
+}
+#recent-records-container .recent-records-images {
+  float: right;
+  width: 40%;
+  text-align: right;
+}
+#recent-records-container .recent-records-images img {
+  max-height: 80px;
+  margin: 4px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: grey 2px 2px 5px;
+  -webkit-box-shadow: grey 2px 2px 5px;
+  box-shadow: grey 2px 2px 5px;
+}
+#recent-records-container .recent-records-images img.multiple {
+  max-height: 50px;
+}
+
 /* Record details */
 .record-details-fields .field {
   margin: 0;

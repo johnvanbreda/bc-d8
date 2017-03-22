@@ -7,6 +7,44 @@
     height: 100%;
   }
 }
+/* Home page */
+#recent-records-container {
+  height: 350px;
+  overflow-y: auto;
+
+  .recent-records-row {
+    margin: 8px 0;
+  }
+  .recent-records-details {
+    float: left;
+    width: 60%;
+    .latin {
+      font-style: italic;
+    }
+    .extra {
+      font-size: 80%;
+    }
+    .record-title {
+      font-weight: bold;
+    }
+  }
+
+  .recent-records-images {
+    float: right;
+    width: 40%;
+    text-align: right;
+    img {
+      max-height: 80px;
+      margin: 4px;
+      @include border-radius(3px);
+      @include box-shadow(grey 2px 2px 5px);
+      &.multiple {
+        max-height: 50px;
+      }
+    }
+  }
+}
+
 /* Record details */
 .record-details-fields {
   .field {

@@ -2,6 +2,9 @@
  * Views
  ============================================================================ */
 
+$default-text-shadow-color: white;
+$default-text-shadow-blur: 3px;
+
 @import "compass/css3";
 
 // View wrapper.
@@ -90,8 +93,9 @@
     border: 1px solid #bababa;
     @include border-radius(3px);
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
-    margin: 2% 5%;
-    max-width: 23%;
+    margin: 2% 2%;
+    max-width: 20.5%;
+    box-sizing: border-box;
     padding: 7px;
     @include inline-block;
     .views-field-title a {
@@ -99,6 +103,32 @@
       font-size: 21px;
       padding: 10px 0 4px 0;
       display: block;
+    }
+    .photo-cntr {
+      position: relative;
+      p {
+        position: absolute;
+        bottom: 0;
+        font-size: 9px;
+        margin: 0;
+        padding: 0 4px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        text-align: right;
+        @include single-text-shadow;
+      }
+    }
+
+  }
+}
+@media (min-width: 60.063em) and (max-width: 75em) {
+  .view-quick-links {
+    li {
+      .views-field-title a {
+        font-size: 16px;
+      }
     }
   }
 }
