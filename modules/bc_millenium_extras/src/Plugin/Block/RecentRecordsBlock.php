@@ -23,21 +23,11 @@ class RecentRecordsBlock extends BlockBase {
     $readAuth = \report_helper::get_read_auth($connection['website_id'], $connection['password']);
     $rows = \report_helper::get_report_data(array(
       'readAuth' => $readAuth,
-      'dataSource' => 'library/occurrences/explore_list',
+      'dataSource' => 'specific_surveys/d8_blocks/filterable_explore_list_with_geom',
       'extraParams' => array(
-        'survey_id'=>'',
-        'taxon_group_id'=>'',
-        'smpattrs'=>'',
-        'occattrs'=>'',
-        'searchArea'=>'',
-        'idlist'=>'',
-        'exclude_sensitive'=>1,
-        'currentUser'=>1,
-        'ownData'=>0,
-        'location_id'=>'',
-        'ownLocality'=>0,
-        'taxon_groups'=>'',
-        'ownGroups'=>0,
+        'smpattrs' => '',
+        'occattrs' => '',
+        'survey_list' => '101,431',
         'limit' => 10
       ),
       'caching' => true,
@@ -46,11 +36,10 @@ class RecentRecordsBlock extends BlockBase {
     $r = '<div id="recent-records-container">';
     $pointJs = '';
     foreach ($rows as $row) {
-      $taxon = explode(' | ', $row['taxon']);
-      $latin = "<span class=\"latin\">$taxon[0]</span>";
-      if (count($taxon)===2) {
-        $common = "<span class=\"common\">$taxon[1]</span>";
-        $species = $taxon[0] !== $taxon[1] ?
+      $latin = "<span class=\"latin\">$row[taxon]</span>";
+      if ($row['common']) {
+        $common = "<span class=\"common\">$row[common]</span>";
+        $species = $row['common'] !== $row['taxon'] ?
           "<div class=\"record-title\">$common</div>($latin)" : "<div class=\"record-title\">$latin</div>";
       }
       else

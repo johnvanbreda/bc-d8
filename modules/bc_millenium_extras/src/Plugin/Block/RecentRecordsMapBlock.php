@@ -24,7 +24,7 @@ class RecentRecordsMapBlock extends BlockBase {
     global $indicia_templates;
     $indicia_templates['jsWrap'] = '{content}';
     $r .= \map_helper::map_panel(array(
-      'presetLayers' => array('google_streets','google_hybrid'),
+      'presetLayers' => array('google_streets', 'google_hybrid'),
       'editLayer' => false,
       'initial_lat'=>$config->get('map_centroid_lat'),
       'initial_long'=>$config->get('map_centroid_long'),
