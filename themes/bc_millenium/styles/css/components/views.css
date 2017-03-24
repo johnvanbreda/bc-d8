@@ -116,3 +116,7 @@
     max-width: 90%;
   }
 }
+/* Apps view tweaks */
+.view-apps p {
+  margin: 0;
+}

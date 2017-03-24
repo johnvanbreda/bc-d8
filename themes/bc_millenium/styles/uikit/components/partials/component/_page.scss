@@ -53,10 +53,19 @@
 // Header
 .pr-header {
   background: url(../../../images/banner.jpg);
-  text-align: center;
   &__rw {}
   &__header-first {}
   &__header-second {}
+  .regions.container {
+    max-width: 1200px;
+    height: 160px;
+    background: none;
+    position: relative;
+    .pr-header__header {
+      position: absolute;
+      bottom: 10px;
+    }
+  }
 }
 
 
