@@ -1,0 +1,59 @@
+{#
+/**
+ * site-builder page template.
+ * Generated on: Tue, 14 Feb 17 16:52:46 +0000
+ */
+#}
+{{ attach_library('bc_millenium/bc_millenium.layout.page') }}
+<div{{ attributes }}>
+  {% if leaderboard.has_regions == true %}
+  <div{{ leaderboard.wrapper_attributes }}>
+    <div{{ leaderboard.container_attributes }}>
+      {{ page.leaderboard }}
+    </div>
+  </div>
+  {% endif %}
+  {% if highlighted.has_regions == true %}
+  <div{{ highlighted.wrapper_attributes }}>
+    <div{{ highlighted.container_attributes }}>
+      {{ page.highlighted }}
+    </div>
+  </div>
+  {% endif %}
+  {% if features.has_regions == true %}
+  <div{{ features.wrapper_attributes }}>
+    <div{{ features.container_attributes }}>
+      {{ page.features_first }}
+      {{ page.features_second }}
+      {{ page.features_third }}
+    </div>
+  </div>
+  {% endif %}
+  {% if main.has_regions == true %}
+  <div{{ main.wrapper_attributes }}>
+    <div{{ main.container_attributes }}>
+      {{ page.content }}
+      {{ page.sidebar_first }}
+      {{ page.sidebar_second }}
+    </div>
+  </div>
+  {% endif %}
+  {% if content_suffix.has_regions == true %}
+  <div{{ content_suffix.wrapper_attributes }}>
+    <div{{ content_suffix.container_attributes }}>
+      {{ page.content_suffix }}
+    </div>
+  </div>
+  {% endif %}
+  {% if subfeatures.has_regions == true %}
+  <div{{ subfeatures.wrapper_attributes }}>
+    <div{{ subfeatures.container_attributes }}>
+      {{ page.subfeatures_first }}
+      {{ page.subfeatures_second }}
+      {{ page.subfeatures_third }}
+      {{ page.subfeatures_fourth }}
+    </div>
+  </div>
+  {% endif %}
+  {{ attribution }}
+</div>
