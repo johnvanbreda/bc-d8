@@ -1,0 +1,5 @@
+services:
+  bc_event_subscriber:
+    class: '\Drupal\bc_millenium_extras\EventSubscriber\BcEventSubscriber'
+    tags:
+      - { name: 'event_subscriber' }
