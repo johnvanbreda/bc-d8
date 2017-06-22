@@ -20,7 +20,6 @@ class BcEventSubscriber implements EventSubscriberInterface {
    * Set header 'Content-Security-Policy' to response to allow embedding in iFrame.
    */
   public function setHeaderContentSecurityPolicy(FilterResponseEvent $event) {
-    \Drupal::logger('bc_millenium_extras')->notice('In setHeaderContentSecurityPolicy');
     $response = $event->getResponse();
     $response->headers->remove('X-Frame-Options');
     $response->headers->set('Content-Security-Policy',
@@ -31,7 +30,6 @@ class BcEventSubscriber implements EventSubscriberInterface {
    * {@inheritdoc}
    */
   static function getSubscribedEvents() {
-    \Drupal::logger('bc_millenium_extras')->notice('In getSubscribedEvents');
     // Response: set header content security policy
     $events[KernelEvents::RESPONSE][] = ['setHeaderContentSecurityPolicy', -10];
     return $events;
