@@ -1,0 +1,37 @@
+@mixin shadow() {
+  -webkit-box-shadow: 2px 2px 4px silver;
+  -moz-box-shadow: 2px 2px 4px silver;
+  box-shadow: 2px 2px 4px silver;
+}
+
+/* Variables */
+$gap: 12px;
+$light-grey: #dddddd;
+$dark-grey: #555555;
+
+/* Additional helpers */
+.bg-alt {
+  background-color: $light-grey;
+}
+.latin {
+  font-style: italic;
+}
+
+/* Elements */
+h1, h2, h3 {
+  font-family: "Museo700", Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+/* Bootstrap tweaks */
+.thumbnail {
+  @include shadow;
+}
+td {
+  .thumbnail {
+    margin: $gap;
+  }
+}

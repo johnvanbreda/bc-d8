@@ -1,0 +1,29 @@
+#entry_form {
+  .form-control {
+    max-width: 80%;
+  }
+  label {
+    width: auto;
+    display: block;
+    margin: $gap 0 0 0;
+    &.error {
+      color: red;
+      margin: 0 0 $gap 0;
+    }
+  }
+  .helpText {
+    margin-left: 0;
+  }
+  .page-notice {
+    margin-top: $gap;
+  }
+  table.species-grid {
+    width: 100%;
+    tr td {
+      select {
+        padding: 0;
+      }
+    }
+  }
+
+}

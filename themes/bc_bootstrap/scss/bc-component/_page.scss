@@ -1,0 +1,58 @@
+$banner-height: 160px;
+
+@import '../../bootstrap/assets/stylesheets/bootstrap/mixins/gradients';
+
+body {
+  margin-top: 0;
+}
+#banner {
+  width: 100%;
+  background: url(../images/banner.jpg);
+  background-size: cover;
+  height: $banner-height;
+  #banner-contents {
+    max-width: 1200px;
+    height: $banner-height - 10px;
+    margin: auto;
+    background: none;
+    position: relative;
+    > div {
+      position: absolute;
+      bottom: 0;
+    }
+    a {
+      font-family: "Museo700", Arial, Helvetica, sans-serif;
+      padding: 0;
+      color: white;
+      line-height: inherit;
+      &.navbar-brand {
+        margin-top: 17px;
+      }
+      &.logo {
+        margin-bottom: 17px;
+      }
+    }
+  }
+}
+#navbar {
+  color: white;
+  background-color: #144808;
+  @include gradient_vertical(#205b10, #144808, 10%, 100%);
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  margin-top: -23px;
+  a {
+    color: white;
+    &.is-active {
+      color: $dark-grey;
+    }
+  }
+}
+#grass-edge {
+  min-height: 11px;
+  margin: -11px 0 $gap*2 0;
+  background: url(../images/banner_grass.png);
+}

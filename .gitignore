@@ -44,3 +44,5 @@ core/phpunit.xml
 
 #IDE files
 .idea
+
+*/.sass-cache/*

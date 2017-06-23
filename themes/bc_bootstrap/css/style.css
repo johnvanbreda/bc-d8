@@ -2535,7 +2535,7 @@ input[type="search"] {
   .input-group-lg > input[type="month"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg
   input[type="month"] {
-    line-height: 46px; } }
+    line-height: 76px; } }
 .form-group {
   margin-bottom: 15px; }
 
@@ -2655,17 +2655,17 @@ select[multiple].input-sm,
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 46px;
+  height: 76px;
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 40px;
   line-height: 1.33333;
   border-radius: 6px; }
 
 select.input-lg, .input-group-lg > select.form-control,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn {
-  height: 46px;
-  line-height: 46px; }
+  height: 76px;
+  line-height: 76px; }
 
 textarea.input-lg, .input-group-lg > textarea.form-control,
 .input-group-lg > textarea.input-group-addon,
@@ -2677,22 +2677,22 @@ select[multiple].input-lg,
   height: auto; }
 
 .form-group-lg .form-control {
-  height: 46px;
+  height: 76px;
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 40px;
   line-height: 1.33333;
   border-radius: 6px; }
 .form-group-lg select.form-control {
-  height: 46px;
-  line-height: 46px; }
+  height: 76px;
+  line-height: 76px; }
 .form-group-lg textarea.form-control,
 .form-group-lg select[multiple].form-control {
   height: auto; }
 .form-group-lg .form-control-static {
-  height: 46px;
-  min-height: 38px;
+  height: 76px;
+  min-height: 60px;
   padding: 11px 16px;
-  font-size: 18px;
+  font-size: 40px;
   line-height: 1.33333; }
 
 .has-feedback {
@@ -2717,9 +2717,9 @@ select[multiple].input-lg,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
-  width: 46px;
-  height: 46px;
-  line-height: 46px; }
+  width: 76px;
+  height: 76px;
+  line-height: 76px; }
 
 .input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
@@ -2874,7 +2874,7 @@ select[multiple].input-lg,
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label {
     padding-top: 11px;
-    font-size: 18px; } }
+    font-size: 40px; } }
 @media (min-width: 768px) {
   .form-horizontal .form-group-sm .control-label {
     padding-top: 6px;
@@ -3114,7 +3114,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 40px;
   line-height: 1.33333;
   border-radius: 6px; }
 
@@ -3516,7 +3516,7 @@ tbody.collapse.in {
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn {
     padding: 10px 16px;
-    font-size: 18px;
+    font-size: 40px;
     border-radius: 6px; }
   .input-group-addon input[type="radio"],
   .input-group-addon input[type="checkbox"] {
@@ -3792,7 +3792,7 @@ tbody.collapse.in {
 .navbar-brand {
   float: left;
   padding: 15px 15px;
-  font-size: 18px;
+  font-size: 40px;
   line-height: 20px;
   height: 50px; }
   .navbar-brand:hover, .navbar-brand:focus {
@@ -4151,7 +4151,7 @@ tbody.collapse.in {
 .pagination-lg > li > a,
 .pagination-lg > li > span {
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 40px;
   line-height: 1.33333; }
 .pagination-lg > li:first-child > a,
 .pagination-lg > li:first-child > span {
@@ -6280,6 +6280,147 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed {
     body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tray, body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed .toolbar-tray > .toolbar-lining:before {
       width: 240px; }
 
+@font-face {
+  font-family: 'Museo300';
+  src: url("../fonts/museo300-regular-webfont.eot");
+  src: url("../fonts/museo300-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museo300-regular-webfont.woff") format("woff"), url("../fonts/museo300-regular-webfont.ttf") format("truetype"), url("../fonts/museo300-regular-webfont.svg#Museo300") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Museo500';
+  src: url("../fonts/museo500-regular-webfont.eot");
+  src: url("../fonts/museo500-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museo500-regular-webfont.woff") format("woff"), url("../fonts/museo500-regular-webfont.ttf") format("truetype"), url("../fonts/museo500-regular-webfont.svg#Museo500") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Museo700';
+  src: url("../fonts/museo700-regular-webfont.eot");
+  src: url("../fonts/museo700-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museo700-regular-webfont.woff") format("woff"), url("../fonts/museo700-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* Variables */
+/* Additional helpers */
+.bg-alt {
+  background-color: #dddddd; }
+
+.latin {
+  font-style: italic; }
+
+/* Elements */
+h1, h2, h3 {
+  font-family: "Museo700", Arial, Helvetica, sans-serif; }
+
+p {
+  font-size: 15px; }
+
+/* Bootstrap tweaks */
+.thumbnail {
+  -webkit-box-shadow: 2px 2px 4px silver;
+  -moz-box-shadow: 2px 2px 4px silver;
+  box-shadow: 2px 2px 4px silver; }
+
+td .thumbnail {
+  margin: 12px; }
+
+body {
+  margin-top: 0; }
+
+#banner {
+  width: 100%;
+  background: url(../images/banner.jpg);
+  background-size: cover;
+  height: 160px; }
+  #banner #banner-contents {
+    max-width: 1200px;
+    height: 150px;
+    margin: auto;
+    background: none;
+    position: relative; }
+    #banner #banner-contents > div {
+      position: absolute;
+      bottom: 0; }
+    #banner #banner-contents a {
+      font-family: "Museo700", Arial, Helvetica, sans-serif;
+      padding: 0;
+      color: white;
+      line-height: inherit; }
+      #banner #banner-contents a.navbar-brand {
+        margin-top: 17px; }
+      #banner #banner-contents a.logo {
+        margin-bottom: 17px; }
+
+#navbar {
+  color: white;
+  background-color: #144808;
+  background-image: -webkit-linear-gradient(top, #205b10 10%, #144808 100%);
+  background-image: -o-linear-gradient(top, #205b10 10%, #144808 100%);
+  background-image: linear-gradient(to bottom, #205b10 10%, #144808 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF205B10', endColorstr='#FF144808', GradientType=0);
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  margin-top: -23px; }
+  #navbar a {
+    color: white; }
+    #navbar a.is-active {
+      color: #555555; }
+
+#grass-edge {
+  min-height: 11px;
+  margin: -11px 0 24px 0;
+  background: url(../images/banner_grass.png); }
+
+.path-frontpage .bs-region--top-left p {
+  font-size: 19px;
+  margin: 0 36px 0 36px; }
+.path-frontpage .view-quick-links li {
+  list-style: none;
+  margin: 12px;
+  max-width: 250px; }
+  .path-frontpage .view-quick-links li .photo-cntr {
+    position: relative; }
+    .path-frontpage .view-quick-links li .photo-cntr .copyright {
+      text-shadow: 0px 0px 3px white;
+      position: absolute;
+      right: 4px;
+      bottom: 0px; }
+  .path-frontpage .view-quick-links li .views-field-title {
+    font-family: "Museo500", Arial, Helvetica, sans-serif;
+    font-size: 22px; }
+.path-frontpage .view-apps li {
+  list-style: none; }
+.path-frontpage .field--name-dynamic-block-fieldnode-login .field--label {
+  font-family: "Museo500", Arial, Helvetica, sans-serif;
+  font-size: 18px; }
+.path-frontpage #recent-records-container {
+  max-height: 350px;
+  overflow: scroll; }
+  .path-frontpage #recent-records-container .record-title {
+    font-weight: bold; }
+.path-frontpage #map-container {
+  margin: 12px 0; }
+
+#entry_form .form-control {
+  max-width: 80%; }
+#entry_form label {
+  width: auto;
+  display: block;
+  margin: 12px 0 0 0; }
+  #entry_form label.error {
+    color: red;
+    margin: 0 0 12px 0; }
+#entry_form .helpText {
+  margin-left: 0; }
+#entry_form .page-notice {
+  margin-top: 12px; }
+#entry_form table.species-grid {
+  width: 100%; }
+  #entry_form table.species-grid tr td select {
+    padding: 0; }
+
 /**
  * jQuery UI autocomplete widget style overrides.
  *
@@ -6341,7 +6482,7 @@ p:last-child,
   margin-bottom: 0; }
 
 .region-help > .glyphicon {
-  font-size: 18px;
+  font-size: 40px;
   float: left;
   margin: -0.05em 0.5em 0 0; }
 .region-help .block {

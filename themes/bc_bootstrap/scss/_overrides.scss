@@ -15,6 +15,12 @@
 @import "component/tabs";
 @import "component/toolbar";
 
+@import "bc-component/fonts";
+@import "bc-style";
+@import "bc-component/page";
+@import "bc-component/home";
+@import "bc-component/form";
+
 // jQuery UI style overrides.
 @import "jquery-ui/autocomplete";
 

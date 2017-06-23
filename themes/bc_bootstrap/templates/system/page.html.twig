@@ -57,6 +57,18 @@
  */
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
+<div role="banner" id="banner" class="container">
+  <div id="banner-contents">
+    {# Header #}
+    {% if page.header %}
+      {% block header %}
+        <div class="col-sm-12" role="heading">
+          {{ page.header }}
+        </div>
+      {% endblock %}
+    {% endif %}
+  </div>
+</div>
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
   {% block navbar %}
@@ -96,20 +108,12 @@
     </header>
   {% endblock %}
 {% endif %}
+<div id="grass-edge"></div>
 
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
-
-      {# Header #}
-      {% if page.header %}
-        {% block header %}
-          <div class="col-sm-12" role="heading">
-            {{ page.header }}
-          </div>
-        {% endblock %}
-      {% endif %}
 
       {# Sidebar First #}
       {% if page.sidebar_first %}
