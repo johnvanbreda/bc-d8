@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\naturespot_blocks;
+namespace Drupal\bc_millenium_extras;
 
 use Drupal\Core\Block\TitleBlockPluginInterface;
 use Drupal\Core\Entity\EntityInterface;
@@ -11,7 +11,7 @@ use Symfony\Cmf\Component\Routing\RouteObjectInterface;
 /**
  * Twig extension to allow plugin blocks in twig templates.
  */
-class NSTwigExtension extends \Twig_Extension {
+class BCTwigExtension extends \Twig_Extension {
 
   /**
    * {@inheritdoc}

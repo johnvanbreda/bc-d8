@@ -3,3 +3,7 @@ services:
     class: '\Drupal\bc_millenium_extras\EventSubscriber\BcEventSubscriber'
     tags:
       - { name: 'event_subscriber' }
+  bc_millenium_extras.twig_extension:
+    class: Drupal\bc_millenium_extras\BCTwigExtension
+    tags:
+      - { name: twig.extension }

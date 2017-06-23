@@ -33,7 +33,7 @@ class RecentRecordsBlock extends BlockBase {
       'caching' => true,
       'cacheTimeout' => 60
     ));
-    $r = '<div id="recent-records-container">';
+    $r = '<h2>Recent records</h2><ul id="recent-records-container" class="list-group">';
     $pointJs = '';
     foreach ($rows as $row) {
       $latin = "<span class=\"latin\">$row[taxon]</span>";
@@ -44,20 +44,23 @@ class RecentRecordsBlock extends BlockBase {
       }
       else
         $species = "<div class=\"record-title\">$latin</div>";
-      $r .= '<div class="recent-records-row clearfix">';
-      $r .= "<div class=\"recent-records-details\">$species<br/><span class=\"extra\">$row[entered_sref] on $row[date] by $row[recorder]</span></div>";
+      $r .= '<li class="recent-records-row clearfix list-group-item">';
+      $r .= "<div class=\"recent-records-details pull-left\">$species<br/><span class=\"extra\">$row[entered_sref] on $row[date] by $row[recorder]</span></div>";
       if (!empty($row['images'])) {
-        $r .= '<div class="recent-records-images">';
+        $r .= '<div class="recent-records-images pull-right">';
         $images = explode(',', $row['images']);
-        $class = count($images)>2 ? ' class="multiple"' : '';
+        $classes = ['thumbnail'];
+        if (count($images>1))
+          $classes[] = 'multiple';
+        $classtext = implode(' ', $classes);
         foreach ($images as $image)
-          $r .= "<img src=\"http://warehouse1.indicia.org.uk/upload/thumb-$image\" $class>";
+          $r .= "<img src=\"http://warehouse1.indicia.org.uk/upload/thumb-$image\" class=\"$classtext\">";
         $r .= '</div>';
       }
-      $r .= '</div>';
+      $r .= '</li>';
       $pointJs .= "  div.addPt(features, {\"occurrence_id\":\"$row[occurrence_id]\",\"taxon\":\"$row[taxon]\",\"geom\":\"$row[geom]\"}, 'geom', {}, '$row[occurrence_id]');\n";
     }
-    $r .= '</div>';
+    $r .= '</ul>';
     \report_helper::$javascript .= <<<JS
 mapInitialisationHooks.push(function(div) {
   var features = [];
